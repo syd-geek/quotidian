@@ -1,0 +1,21 @@
+# Generated files by Hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Hugo execution logs
+hugo.log
+
+# Temporary lock file
+.hugo_build.lock
+
+# Embedded binaries (if you accidentally keep them in the repo)
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+

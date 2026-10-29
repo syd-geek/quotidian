@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ .Content }}
+
+    <h2>Log</h2>
+    <ul>
+    {{ range where site.RegularPages "Section" "log" }}
+      <li>
+        <a href="{{ .RelPermalink }}">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "2006-01-02" }}:
+          </time>{{ .Title }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
+
