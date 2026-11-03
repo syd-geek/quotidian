@@ -1,6 +1,5 @@
 {{ define "main" }}
   {{ .Content }}
-
     <h2>Log</h2>
     <ul>
     {{ range where site.RegularPages "Section" "log" }}
@@ -13,5 +12,8 @@
       </li>
     {{ end }}
   </ul>
+  <h2>Dots</h2>
+  <p>A web of interconnected ideas.</p>
+  <p><a href="/dots/">Explore the idea network</a></p>
+  {{ partial "tags.html" .}}
 {{ end }}
-

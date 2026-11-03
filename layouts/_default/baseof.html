@@ -64,6 +64,16 @@
         padding-bottom: 5px;
       }
 
+      hr {
+        border: none;
+        border-top: 2px solid #ff6600;
+        margin: 40px 0;
+      }
+
+      small {
+        color: #8aa9b5;
+      }
+
       a {
         color: #cc99cc;
         text-decoration: none;
@@ -73,6 +83,186 @@
         color: #ff99cc;
         text-decoration: underline;
       }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .tag-list a {
+        display: inline-block;
+        padding: 3px 10px;
+        border: 1px solid #8a668a;
+        border-radius: 5px;
+        color: #8aa9b5;
+        font-size: 0.85em;
+        line-height: 1.4;
+      }
+
+      .tag-list a:hover {
+        border-color: #b86f3c;
+        background: #25202a;
+        color: #ffaa33;
+        text-decoration: none;
+      }
+
+      .zettel-index {
+        padding-left: 2.5rem;
+      }
+
+      .zettel-hubs {
+        margin: 2rem 0;
+      }
+
+      .hub-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+        gap: 16px;
+      }
+
+      .hub-card {
+        padding: 18px;
+        border: 1px solid #55445d;
+        border-left: 4px solid #ff9900;
+        border-radius: 6px;
+        background: #111122;
+      }
+
+      .hub-card h3 {
+        margin: 0.25rem 0;
+        border: 0;
+      }
+
+      .hub-card h4 {
+        margin: 1rem 0 0.25rem;
+        color: #8aa9b5;
+      }
+
+      .hub-start {
+        display: inline-block;
+        margin-top: 0.25rem;
+        font-weight: bold;
+      }
+
+      .hub-paths {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      .hub-paths small {
+        font-family: monospace;
+      }
+
+      .zettel-all-notes {
+        margin-top: 2.5rem;
+      }
+
+      .zettel-entry {
+        padding: 0 0 1.25rem 0.5rem;
+      }
+
+      .zettel-entry + .zettel-entry {
+        border-top: 1px solid #55445d;
+        padding-top: 1.25rem;
+      }
+
+      .zettel-id {
+        color: #8aa9b5;
+        font-family: monospace;
+        letter-spacing: 0.04em;
+      }
+
+      .zettel-entry h2 {
+        margin: 0.15rem 0;
+        border: 0;
+      }
+
+      .zettel-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+        gap: 12px;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #55445d;
+      }
+
+      .zettel-links h2 {
+        margin: 0 0 8px;
+        color: #8aa9b5;
+        font-size: 0.9em;
+        border: 0;
+        padding: 0;
+      }
+
+      .zettel-links ul {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      .site-footer {
+        margin-top: 40px;
+        padding-top: 16px;
+        border-top: 2px solid #ff6600;
+      }
+
+      .web-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .web-badge {
+        box-sizing: border-box;
+        width: 88px;
+        height: 31px;
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        align-items: center;
+        gap: 3px;
+        padding: 2px 4px;
+        border: 3px outset #cc99cc;
+        background: linear-gradient(135deg, #30304a, #111122 55%, #25253a);
+        color: #ffaa33;
+        font-family: monospace;
+        font-size: 7px;
+        font-weight: bold;
+        line-height: 1.1;
+        text-align: left;
+        text-decoration: none;
+        text-transform: uppercase;
+        box-shadow: 1px 1px 0 #000;
+      }
+
+      .badge-icon {
+        width: 22px;
+        height: 22px;
+        image-rendering: pixelated;
+      }
+
+      .badge-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        white-space: nowrap;
+      }
+
+      .badge-copy strong {
+        color: #66ccff;
+        font-size: 9px;
+      }
+
+      .web-badge:hover {
+        color: #ff99cc;
+        text-decoration: none;
+      }
+
+      .web-badge:hover .badge-copy strong {
+        color: #ff99cc;
+      }
+
       /* body { font-family: sans-serif; max-width: 750px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
         nav { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         nav a { margin-right: 15px; text-decoration: none; color: #0066cc; font-weight: bold; }
@@ -87,8 +277,38 @@
     <nav>
       <a href="/">Home</a>
       <a href="/log/">Log</a>
+      <a href="/dots/">Dots</a>
     </nav>
 
     <main>{{ block "main" . }}{{ .Content }}{{ end }}</main>
+
+    <footer class="site-footer">
+      <div class="web-badges" aria-label="Web badges">
+        <span class="web-badge" role="img" aria-label="Hand-crafted HTML">
+          <svg class="badge-icon" viewBox="0 0 22 22" aria-hidden="true">
+            <path
+              fill="#66ccff"
+              d="M2 3h7v3H5v4H2zm11 0h7v7h-3V6h-4zM2 13h3v4h4v3H2zm15 0h3v7h-7v-3h4z"
+            />
+            <path fill="#ffaa33" d="M9 10h4v3H9zM6 8h3v3H6zm7 3h3v3h-3z" />
+            <path fill="#cc99cc" d="M10 6h3v3h-3zm-4 8h3v3H6zm7-2h3v3h-3z" />
+          </svg>
+          <span class="badge-copy">HAND-CRAFTED<strong>HTML</strong></span>
+        </span>
+        <span
+          class="web-badge"
+          role="img"
+          aria-label="Best viewed with curiosity"
+        >
+          <svg class="badge-icon" viewBox="0 0 22 22" aria-hidden="true">
+            <path fill="#cc99cc" d="M3 2h16v13H3z" />
+            <path fill="#111122" d="M5 4h12v9H5z" />
+            <path fill="#66ccff" d="M7 6h3v2H7zm5 0h3v2h-3zM8 10h6v1H8z" />
+            <path fill="#ffaa33" d="M9 15h4v2h4v2H5v-2h4z" />
+          </svg>
+          <span class="badge-copy">BEST VIEWED<strong>CURIOUSLY</strong></span>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>

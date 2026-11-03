@@ -9,6 +9,6 @@ Two days Patrick Stewart died and since then I have been thinking about his role
 
 Two characters were always my favourite. One was Data and the other of course the Captain. I don't know what it was but I would sit on the computer after watching every episode just playing around, finding and learning new things. Just geeking out.
 
-Thank you Sir Patrick Stewart for inspiring to have a super awesome career journey as a programmer.
+Thank you Sir Patrick Stewart for inspiring me to have a super awesome career journey as a programmer.
 
 Patrick Stewart's autobiography Making it so is on my bookshelf and I plan to read it soon.

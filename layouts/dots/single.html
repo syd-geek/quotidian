@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <p><a href="/dots/">&larr; Dots index</a></p>
+  <article>
+    <small class="zettel-id">{{ .Params.id }}</small>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{ partial "dots/links.html" . }}
+  </article>
+{{ end }}
