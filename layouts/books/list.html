@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <ul>
+    {{ range .RegularPages.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .Params.book_author }} — {{ . }}{{ end }}
+        {{ with .Params.rating }} ({{ . }}/5){{ end }}
+      </li>
+    {{ else }}
+      <li>No book reviews yet.</li>
+    {{ end }}
+  </ul>
+{{ end }}

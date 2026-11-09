@@ -1,25 +1,21 @@
 {{ $note := . }}
-{{ $noteID := .Params.id }}
 {{ $pages := where site.RegularPages "Section" "dots" }}
-{{ $outgoing := .Params.links | default slice }}
+{{ $noteTarget := printf "](%s.md)" .File.ContentBaseName }}
+{{ $hasOutgoing := false }}
 {{ $hasIncoming := false }}
 <section class="zettel-links" aria-label="Note links">
   <div>
     <h2>Links</h2>
-    {{ if $outgoing }}
-      <ul>
-        {{ range $outgoing }}
-          {{ $linkID := . }}
-          {{ with where $pages "Params.id" $linkID }}
-            {{ range . }}
-              <li><a href="{{ .RelPermalink }}"><code>{{ .Params.id }}</code> {{ .Title }}</a></li>
-            {{ end }}
-          {{ else }}
-            <li><code>{{ $linkID }}</code> <small>Unresolved note link</small></li>
-          {{ end }}
+    <ul>
+      {{ range $pages }}
+        {{ $target := printf "](%s.md)" .File.ContentBaseName }}
+        {{ if and (ne .RelPermalink $note.RelPermalink) (strings.Contains $note.RawContent $target) }}
+          {{ $hasOutgoing = true }}
+          <li><a href="{{ .RelPermalink }}"><code>{{ .Params.id }}</code> {{ .Title }}</a></li>
         {{ end }}
-      </ul>
-    {{ else }}
+      {{ end }}
+    </ul>
+    {{ if not $hasOutgoing }}
       <p>None yet.</p>
     {{ end }}
   </div>
@@ -27,8 +23,7 @@
     <h2>Linked from</h2>
     <ul>
       {{ range $pages }}
-        {{ $links := .Params.links | default slice }}
-        {{ if and (ne .RelPermalink $note.RelPermalink) (in $links $noteID) }}
+        {{ if and (ne .RelPermalink $note.RelPermalink) (strings.Contains .RawContent $noteTarget) }}
           {{ $hasIncoming = true }}
           <li><a href="{{ .RelPermalink }}"><code>{{ .Params.id }}</code> {{ .Title }}</a></li>
         {{ end }}

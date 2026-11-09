@@ -15,5 +15,17 @@
   <h2>Dots</h2>
   <p>A web of interconnected ideas.</p>
   <p><a href="/dots/">Explore the idea network</a></p>
+  <h2>Books</h2>
+  <ul>
+    {{ range (where site.RegularPages "Section" "books").ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .Params.book_author }} — {{ . }}{{ end }}
+        {{ with .Params.rating }} ({{ . }}/5){{ end }}
+      </li>
+    {{ else }}
+      <li>No book reviews yet. <a href="/books/">Browse Books</a></li>
+    {{ end }}
+  </ul>
   {{ partial "tags.html" .}}
 {{ end }}

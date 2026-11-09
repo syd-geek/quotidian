@@ -1,3 +1,3 @@
-+++
-title = "Log"
-+++
+---
+title: Log
+---

@@ -1,0 +1,13 @@
+---
+date: "2026-11-09"
+draft: false
+title: "Sophie's World"
+book_author: Jostein Gaarder
+rating: ""
+cover: ""
+cover_attribution: ""
+---
+
+## Review
+
+Add your review here.
