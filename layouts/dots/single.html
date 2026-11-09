@@ -1,9 +1,13 @@
 {{ define "main" }}
   <p><a href="/dots/">&larr; Dots index</a></p>
   <article>
-    <small class="zettel-id">{{ .Params.id }}</small>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    {{ with .Params.parent }}
+      {{ with site.GetPage (printf "/dots/%s" .) }}
+        <p>Part of <a href="{{ .RelPermalink }}">{{ .Title }}</a>.</p>
+      {{ end }}
+    {{ end }}
     {{ partial "dots/links.html" . }}
   </article>
 {{ end }}

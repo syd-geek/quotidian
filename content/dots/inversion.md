@@ -2,7 +2,7 @@
 title: Inversion
 date: 2026-11-09
 draft: false
-id: "202611093"
+parent: mental-model
 ---
 
 Instead of asking only how to succeed, ask what would reliably cause failure,

@@ -2,7 +2,7 @@
 title: Margin of Safety
 date: 2026-11-09
 draft: false
-id: "202611092"
+parent: mental-model
 ---
 
 Plans depend on estimates, and estimates can be wrong. A margin of safety leaves

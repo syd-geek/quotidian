@@ -1,51 +1,22 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+<h1>{{ .Title }}</h1>
+{{ .Content }} {{ $notes := .RegularPages.ByTitle }} {{ $rootNotes := slice }}
+{{ range $notes }} {{ if not .Params.parent }} {{ $rootNotes = $rootNotes |
+append . }} {{ end }} {{ end }}
 
-  {{ $notes := .RegularPages.ByParam "id" }}
-  {{ $hubs := where $notes "Params.hub" true }}
-  {{ with $hubs }}
-    <section class="zettel-hubs" aria-labelledby="hub-heading">
-      <h2 id="hub-heading">Start with a hub</h2>
-      <p>Choose a broad idea, then follow its links into the notes.</p>
-      <div class="hub-grid">
-        {{ range . }}
-          <article class="hub-card">
-            <small class="zettel-id">{{ .Params.id }} · HUB</small>
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <p>{{ .Summary | plainify }}</p>
-            <a class="hub-start" href="{{ .RelPermalink }}">Start here &rarr;</a>
-            {{ with .Params.links }}
-              <h4>Explore these notes</h4>
-              <ul class="hub-paths">
-                {{ range . }}
-                  {{ $linkID := . }}
-                  {{ range where $notes "Params.id" $linkID }}
-                    <li><a href="{{ .RelPermalink }}"><small>{{ .Params.id }}</small> {{ .Title }}</a></li>
-                  {{ end }}
-                {{ end }}
-              </ul>
-            {{ end }}
-          </article>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
-
-  <section class="zettel-all-notes" aria-labelledby="all-notes-heading">
-    <h2 id="all-notes-heading">All notes</h2>
-    {{ with $notes }}
-    <ol class="zettel-index">
-      {{ range . }}
-        <li class="zettel-entry">
-          <small class="zettel-id">{{ .Params.id }}</small>
-          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <div>{{ .Summary }}</div>
-        </li>
-      {{ end }}
-    </ol>
+<section class="zettel-all-notes" aria-labelledby="top-level-heading">
+  <h2 id="top-level-heading">Starting Points</h2>
+  {{ with $rootNotes }}
+  <ul class="zettel-index">
+    {{ range . }}
+    <li class="zettel-entry">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <div>{{ .Summary }}</div>
+    </li>
+    {{ end }}
+  </ul>
   {{ else }}
-    <p>No notes yet.</p>
+  <p>No top-level notes yet.</p>
   {{ end }}
-  </section>
+</section>
 {{ end }}

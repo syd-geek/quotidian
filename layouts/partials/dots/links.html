@@ -1,36 +1,31 @@
-{{ $note := . }}
-{{ $pages := where site.RegularPages "Section" "dots" }}
-{{ $noteTarget := printf "](%s.md)" .File.ContentBaseName }}
-{{ $hasOutgoing := false }}
-{{ $hasIncoming := false }}
+{{ $note := . }} {{ $pages := where site.RegularPages "Section" "dots" }} {{
+$noteTarget := printf "](%s.md)" .File.ContentBaseName }} {{ $hasOutgoing :=
+false }} {{ $hasIncoming := false }}
+<h2>Connections</h2>
 <section class="zettel-links" aria-label="Note links">
   <div>
-    <h2>Links</h2>
+    <h2>To</h2>
     <ul>
-      {{ range $pages }}
-        {{ $target := printf "](%s.md)" .File.ContentBaseName }}
-        {{ if and (ne .RelPermalink $note.RelPermalink) (strings.Contains $note.RawContent $target) }}
-          {{ $hasOutgoing = true }}
-          <li><a href="{{ .RelPermalink }}"><code>{{ .Params.id }}</code> {{ .Title }}</a></li>
-        {{ end }}
-      {{ end }}
+      {{ range $pages }} {{ $target := printf "](%s.md)" .File.ContentBaseName
+      }} {{ if and (ne .RelPermalink $note.RelPermalink) (strings.Contains
+      $note.RawContent $target) }} {{ $hasOutgoing = true }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }} {{ end }}
     </ul>
     {{ if not $hasOutgoing }}
-      <p>None yet.</p>
+    <p>None yet.</p>
     {{ end }}
   </div>
   <div>
-    <h2>Linked from</h2>
+    <h2>From</h2>
     <ul>
-      {{ range $pages }}
-        {{ if and (ne .RelPermalink $note.RelPermalink) (strings.Contains .RawContent $noteTarget) }}
-          {{ $hasIncoming = true }}
-          <li><a href="{{ .RelPermalink }}"><code>{{ .Params.id }}</code> {{ .Title }}</a></li>
-        {{ end }}
-      {{ end }}
+      {{ range $pages }} {{ if and (ne .RelPermalink $note.RelPermalink)
+      (strings.Contains .RawContent $noteTarget) }} {{ $hasIncoming = true }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }} {{ end }}
     </ul>
     {{ if not $hasIncoming }}
-      <p>None yet.</p>
+    <p>None yet.</p>
     {{ end }}
   </div>
 </section>

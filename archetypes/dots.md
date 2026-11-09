@@ -2,7 +2,6 @@
 date: '{{ .Date.Format "2006-01-02" }}'
 draft: true
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-id: "{{ .Date.Format "20060102" }}1"
 ---
 
 Add one focused idea. Link to another note using Markdown links, for example
