@@ -4,7 +4,7 @@ draft: false
 title: "Sophie's World"
 book_author: Jostein Gaarder
 rating: ""
-cover: ""
+cover: "/images/books/sophies-world.jpg"
 cover_attribution: ""
 ---
 

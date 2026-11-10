@@ -10,16 +10,16 @@ I use a 7 start rating system. I am still working on the details of the system b
 
 <span class="book-rating">★★★★★★★</span> Life changing. The book gave me a new way of thinking
 
-<span class="stars">★★★★★★</span>I gave me joy because I learned something new
+<span class="book-rating">★★★★★★</span>I learned something new and interesting
 
-<span class="stars">★★★★★</span> I did not enjoy reading it but the content was useful so I persevered
+<span class="book-rating">★★★★★</span> Gave me insights I did not have
 
-<span class="stars">★★★★</span> I remain undecided if it was a good read or bad
+<span class="book-rating">★★★★</span> I remain undecided if it was a good read or bad
 
-<span class="stars">★★★</span> It was badly written
+<span class="book-rating">★★★</span> Mediocre at best
 
-<span class="stars">★★</span> Started but could not finish it
+<span class="book-rating">★★</span> Started but could not finish it
 
-<span class="stars">★</span> To be placed in the garbage bin
+<span class="book-rating">★</span> To be placed in the garbage bin
 
 ### The List

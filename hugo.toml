@@ -2,3 +2,6 @@ baseURL = 'https://quotidian.com/'
 locale = 'en-au'
 title = 'Quotidian'
 enableGitInfo = true
+
+[markup.goldmark.renderer]
+unsafe = true

@@ -3,7 +3,7 @@ date: "1900-01-01"
 draft: false
 title: "Viral"
 book_author: "Alina Chan & Matt Ridley"
-rating: "★★★"
+rating: "4"
 cover: "/images/covers/viral.jpg"
 cover_attribution: ""
 ---

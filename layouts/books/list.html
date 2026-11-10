@@ -1,16 +1,20 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
 
-  <ul>
-    {{ range .RegularPages.ByDate.Reverse }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ with .Params.book_author }} — {{ . }}{{ end }}
-        {{ with .Params.rating }} ({{ . }}/5){{ end }}
-      </li>
-    {{ else }}
-      <li>No book reviews yet.</li>
-    {{ end }}
-  </ul>
+<ul>
+  {{ range .RegularPages.ByDate.Reverse }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ with .Params.book_author }} — {{ . }}{{ end }} {{ with .Params.rating }}
+    <span class="book-rating"
+      >{{ if findRE "^[0-9]+$" (printf "%v" .) }}{{ range seq (int .) }}★{{ end
+      }}{{ else }}{{ . }}{{ end }}</span
+    >
+    {{ else }} <span class="no-stars">No Stars yet</span> {{ end }}
+  </li>
+  {{ else }}
+  <li>No book reviews yet.</li>
+  {{ end }}
+</ul>
 {{ end }}

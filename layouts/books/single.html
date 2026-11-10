@@ -3,10 +3,12 @@
   <article>
     <h1>{{ .Title }}</h1>
     {{ with .Params.book_author }}<p>By {{ . }}</p>{{ end }}
-    {{ with .Params.rating }}<p>Rating: {{ . }}/5</p>{{ end }}
+    {{ with .Params.rating }}
+      <p>Rating: <span class="book-rating">{{ if findRE "^[0-9]+$" (printf "%v" .) }}{{ range seq (int .) }}★{{ end }}{{ else }}{{ . }}{{ end }}</span></p>
+    {{ end }}
     {{ with .Params.cover }}
       <figure>
-        <img src="{{ . | relURL }}" alt="Cover of {{ $.Title }}" />
+        <img class="book-cover-thumbnail" src="{{ . | relURL }}" alt="Cover of {{ $.Title }}" />
         {{ with $.Params.cover_attribution }}<figcaption>{{ . }}</figcaption>{{ end }}
       </figure>
     {{ end }}

@@ -21,7 +21,7 @@
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{ with .Params.book_author }} — {{ . }}{{ end }}
-        {{ with .Params.rating }} ({{ . }}/5){{ end }}
+        {{ with .Params.rating }} <span class="book-rating">{{ . }}</span>{{ end }}
       </li>
     {{ else }}
       <li>No book reviews yet. <a href="/books/">Browse Books</a></li>
