@@ -17,15 +17,20 @@
   <p><a href="/dots/">Explore the idea network</a></p>
   <h2>Books</h2>
   <ul>
-    {{ range (where site.RegularPages "Section" "books").ByDate.Reverse }}
+    {{ range first 5 (where site.RegularPages "Section" "books").ByDate.Reverse }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{ with .Params.book_author }} — {{ . }}{{ end }}
-        {{ with .Params.rating }} <span class="book-rating">{{ . }}</span>{{ end }}
+        {{ with .Params.rating }}
+          <span class="book-rating">{{ if findRE "^[0-9]+$" (printf "%v" .) }}{{ range seq (int .) }}★{{ end }}{{ else }}{{ . }}{{ end }}</span>
+        {{ else }}
+          <span class="no-stars">No Stars yet</span>
+        {{ end }}
       </li>
     {{ else }}
       <li>No book reviews yet. <a href="/books/">Browse Books</a></li>
     {{ end }}
   </ul>
+  <p><a href="/books/">Browse all books</a></p>
   {{ partial "tags.html" .}}
 {{ end }}
