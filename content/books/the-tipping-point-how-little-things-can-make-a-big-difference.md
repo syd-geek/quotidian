@@ -1,0 +1,13 @@
+---
+date: "1900-01-01"
+draft: false
+title: "The Tipping Point: How Little Things Can Make a Big Difference"
+book_author: "Gladwell, Malcolm"
+rating: ""
+cover: "/images/covers/the-tipping-point.jpg"
+cover_attribution: ""
+---
+
+## Review
+
+Add your review here.

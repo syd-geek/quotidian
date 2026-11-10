@@ -1,0 +1,13 @@
+---
+date: "1900-01-01"
+draft: false
+title: "Gates: How Microsoft's Mogul Reinvented an Industry--and Made Himself the Richest Man in America"
+book_author: "Manes, Stephen"
+rating: ""
+cover: "/images/covers/gates.jpg"
+cover_attribution: ""
+---
+
+## Review
+
+Add your review here.

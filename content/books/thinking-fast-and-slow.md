@@ -1,0 +1,13 @@
+---
+date: "1900-01-01"
+draft: false
+title: "Thinking, Fast and Slow"
+book_author: "Kahneman, Daniel"
+rating: ""
+cover: "/images/covers/thinking-fast-and-slow.jpg"
+cover_attribution: ""
+---
+
+## Review
+
+Add your review here.
