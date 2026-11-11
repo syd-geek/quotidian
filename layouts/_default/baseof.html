@@ -3,251 +3,50 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ .Title }}</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        max-width: 750px;
-        margin: 40px auto;
-        padding: 0 20px;
-        line-height: 1.6;
-        background-color: #000000;
-        color: #ffaa33; /* LCARS Amber/Gold */
-      }
-
-      nav {
-        margin-bottom: 30px;
-        border-bottom: 2px solid #ff6600; /* LCARS Orange Accent */
-        padding-bottom: 10px;
-      }
-
-      nav a {
-        margin-right: 15px;
-        text-decoration: none;
-        color: #cc99cc; /* LCARS Lavender/Pink */
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      nav a:hover {
-        color: #ff99cc;
-        text-decoration: underline;
-      }
-
-      pre {
-        background: #111122; /* Deep dark blue-grey terminal backing */
-        padding: 15px;
-        border-radius: 6px;
-        border-left: 4px solid #ff9900;
-        overflow-x: auto;
-      }
-
-      code {
-        font-family: monospace;
-        background: #111122;
-        color: #66ccff; /* LCARS Blue data readout */
-        padding: 2px 4px;
-        border-radius: 3px;
-      }
-
-      pre code {
-        padding: 0;
-        background: none;
-        color: #ffaa33;
-      }
-
-      h2,
-      h3,
-      h4 {
-        color: #66ccff;
-        border-bottom: 2px solid #ff6600;
-        padding-bottom: 5px;
-      }
-
-      hr {
-        border: none;
-        border-top: 2px solid #ff6600;
-        margin: 40px 0;
-      }
-
-      small {
-        color: #8aa9b5;
-      }
-
-      a {
-        color: #cc99cc;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: #ff99cc;
-        text-decoration: underline;
-      }
-
-      .tag-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        padding: 0;
-        list-style: none;
-      }
-
-      .tag-list a {
-        display: inline-block;
-        padding: 3px 10px;
-        border: 1px solid #8a668a;
-        border-radius: 5px;
-        color: #8aa9b5;
-        font-size: 0.85em;
-        line-height: 1.4;
-      }
-
-      .tag-list a:hover {
-        border-color: #b86f3c;
-        background: #25202a;
-        color: #ffaa33;
-        text-decoration: none;
-      }
-
-      .zettel-index {
-        padding-left: 2.5rem;
-      }
-
-      .zettel-all-notes {
-        margin-top: 2.5rem;
-      }
-
-      .zettel-entry {
-        padding: 0 0 1.25rem 0.5rem;
-      }
-
-      .zettel-entry + .zettel-entry {
-        border-top: 1px solid #55445d;
-        padding-top: 1.25rem;
-      }
-
-      .zettel-entry h2 {
-        margin: 0.15rem 0;
-        border: 0;
-      }
-
-      .zettel-links {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
-        gap: 12px;
-        margin-top: 16px;
-        padding-top: 12px;
-      }
-
-      .zettel-links h2 {
-        margin: 0 0 8px;
-        color: #8aa9b5;
-        font-size: 0.9em;
-        border: 0;
-        padding: 0;
-      }
-
-      .zettel-links ul {
-        margin: 0;
-        padding-left: 1.25rem;
-      }
-
-      .site-footer {
-        margin-top: 40px;
-        padding-top: 16px;
-        border-top: 2px solid #ff6600;
-      }
-
-      .web-badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .web-badge {
-        box-sizing: border-box;
-        width: 88px;
-        height: 31px;
-        display: grid;
-        grid-template-columns: 24px 1fr;
-        align-items: center;
-        gap: 3px;
-        padding: 2px 4px;
-        border: 3px outset #cc99cc;
-        background: linear-gradient(135deg, #30304a, #111122 55%, #25253a);
-        color: #ffaa33;
-        font-family: monospace;
-        font-size: 7px;
-        font-weight: bold;
-        line-height: 1.1;
-        text-align: left;
-        text-decoration: none;
-        text-transform: uppercase;
-        box-shadow: 1px 1px 0 #000;
-      }
-
-      .badge-icon {
-        width: 22px;
-        height: 22px;
-        image-rendering: pixelated;
-      }
-
-      .badge-copy {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        white-space: nowrap;
-      }
-
-      .badge-copy strong {
-        color: #66ccff;
-        font-size: 9px;
-      }
-
-      .web-badge:hover {
-        color: #ff99cc;
-        text-decoration: none;
-      }
-
-      .web-badge:hover .badge-copy strong {
-        color: #ff99cc;
-      }
-
-      .no-stars {
-        color: #8aa9b5;
-      }
-
-      .book-rating {
-        display: inline-block;
-        margin-left: 0.2rem;
-        color: #ffd166;
-        font-size: 0.9rem;
-        letter-spacing: 0.06em;
-        text-shadow:
-          0 0 2px rgba(255, 209, 102, 0.9),
-          0 0 18px rgba(255, 166, 0, 0.7);
-      }
-
-      .book-cover-thumbnail {
-        display: block;
-        width: auto;
-        max-width: 160px;
-        max-height: 240px;
-        object-fit: contain;
-      }
-
-      /* body { font-family: sans-serif; max-width: 750px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
-        nav { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        nav a { margin-right: 15px; text-decoration: none; color: #0066cc; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
-        code { font-family: monospace; background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
-        pre code { padding: 0; background: none; }
-        a { color: #0000FF; text-decoration: none; } */
-    </style>
+    <link rel="stylesheet" href="{{ "css/site.css" | relURL }}" />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      document.documentElement.dataset.theme =
+        savedTheme === "light" ? "light" : "dark";
+    </script>
+    <script src="{{ "js/theme.js" | relURL }}" defer></script>
   </head>
   <body>
     <nav>
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Switch to light theme"
+        title="Switch to light theme"
+      >
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.8"
+          />
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+          <path
+            d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="1.8"
+          />
+        </svg>
+      </button>
       <a href="/">Home</a>
       <a href="/log/">Log</a>
       <a href="/dots/">Dots</a>
@@ -265,9 +64,9 @@
         >
           <svg class="badge-icon" viewBox="0 0 22 22" aria-hidden="true">
             <path fill="#cc99cc" d="M3 2h16v13H3z" />
-            <path fill="#111122" d="M5 4h12v9H5z" />
-            <path fill="#66ccff" d="M7 6h3v2H7zm5 0h3v2h-3zM8 10h6v1H8z" />
-            <path fill="#ffaa33" d="M9 15h4v2h4v2H5v-2h4z" />
+            <path fill="var(--page-background)" d="M5 4h12v9H5z" />
+            <path fill="var(--code-color)" d="M7 6h3v2H7zm5 0h3v2h-3zM8 10h6v1H8z" />
+            <path fill="var(--text-color)" d="M9 15h4v2h4v2H5v-2h4z" />
           </svg>
           <span class="badge-copy">BEST VIEWED<strong>CURIOUSLY</strong></span>
         </span>

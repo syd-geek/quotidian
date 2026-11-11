@@ -7,3 +7,5 @@ title: "Quotidian Log"
 Welcome to the Quotidian Log!
 
 Personal website of a former computer geek with a love for [learning](/dots), discovering, and [reading](/books).
+
+You can fine more about this website [here](/about).

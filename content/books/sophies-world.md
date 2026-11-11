@@ -8,6 +8,6 @@ cover: "/images/books/sophies-world.jpg"
 cover_attribution: ""
 ---
 
-## Review
+## Notes
 
 Add your review here.
