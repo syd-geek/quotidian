@@ -1,0 +1,15 @@
+---
+type: books
+url: /books/the-code-book-the-science-of-secrecy-from-ancient-egypt-to-quantum-cryptography/
+date: "1900-01-01"
+draft: true
+title: "The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography"
+book_author: "Simon Singh"
+rating: ""
+cover: "/images/covers/the-code-book.jpg"
+cover_attribution: ""
+---
+
+## Review
+
+Add your review here.

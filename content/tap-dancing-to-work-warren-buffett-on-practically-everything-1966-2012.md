@@ -1,0 +1,15 @@
+---
+type: books
+url: /books/tap-dancing-to-work-warren-buffett-on-practically-everything-1966-2012/
+date: "1900-01-01"
+draft: true
+title: "Tap Dancing to Work: Warren Buffett on Practically Everything, 1966-2012"
+book_author: "Loomis, Carol J."
+rating: ""
+cover: "/images/covers/tap-dancing-to-work.jpg"
+cover_attribution: ""
+---
+
+## Review
+
+Add your review here.

@@ -1,0 +1,15 @@
+---
+type: books
+url: /books/viral/
+date: "1900-01-01"
+draft: true
+title: "Viral"
+book_author: "Alina Chan & Matt Ridley"
+rating: "4"
+cover: "/images/covers/viral.jpg"
+cover_attribution: ""
+---
+
+## Review
+
+Add your review here.

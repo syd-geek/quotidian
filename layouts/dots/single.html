@@ -4,7 +4,9 @@
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     {{ with .Params.parent }}
-      {{ with site.GetPage (printf "/dots/%s" .) }}
+      {{ $parentName := . }}
+      {{ $parent := where (where site.RegularPages "Type" "dots") "File.ContentBaseName" $parentName }}
+      {{ with index $parent 0 }}
         <p>Part of <a href="{{ .RelPermalink }}">{{ .Title }}</a>.</p>
       {{ end }}
     {{ end }}

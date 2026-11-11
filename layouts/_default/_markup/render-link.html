@@ -1,7 +1,8 @@
 {{- $destination := .Destination -}}
 {{- if strings.HasSuffix $destination ".md" -}}
   {{- $target := strings.TrimSuffix ".md" $destination -}}
-  {{- with site.GetPage (printf "/dots/%s" $target) -}}
+  {{- $dots := where (where site.RegularPages "Type" "dots") "File.ContentBaseName" $target -}}
+  {{- with index $dots 0 -}}
     <a href="{{ .RelPermalink }}"{{ with $.Title }} title="{{ . }}"{{ end }}>{{ $.Text | safeHTML }}</a>
   {{- else -}}
     <a href="{{ $destination | safeURL }}"{{ with $.Title }} title="{{ . }}"{{ end }}>{{ $.Text | safeHTML }}</a>

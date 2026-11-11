@@ -1,4 +1,4 @@
-{{ $note := . }} {{ $pages := where site.RegularPages "Section" "dots" }} {{
+{{ $note := . }} {{ $pages := where site.RegularPages "Type" "dots" }} {{
 $noteTarget := printf "](%s.md)" .File.ContentBaseName }} {{ $hasOutgoing :=
 false }} {{ $hasIncoming := false }}
 <h2>Connections</h2>
