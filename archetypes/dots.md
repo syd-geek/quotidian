@@ -5,5 +5,6 @@ title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 type: dots
 ---
 
-Add one focused idea. Link to another note using Markdown links, for example
-[Margin of Safety](margin-of-safety.md). Obsidian follows these links too.
+Add one focused idea. Use standard Markdown links so links work in both Obsidian
+and Hugo, for example [Margin of Safety](margin-of-safety.md). Avoid Obsidian
+wiki-link syntax (`[[Margin of Safety]]`), which Hugo does not render as a link.
