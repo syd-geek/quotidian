@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Zen and the Art of Motorcycle Maintenance"
 book_author: "Pirsig, Robert M."
 rating: "1"

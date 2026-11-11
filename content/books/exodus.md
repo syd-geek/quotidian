@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Exodus"
 book_author: "Uris, Leon"
 rating: ""

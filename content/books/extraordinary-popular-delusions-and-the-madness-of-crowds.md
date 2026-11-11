@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Extraordinary Popular Delusions and the Madness of Crowds"
 book_author: "Mackay, Charles"
 rating: ""

@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Art of Deception: Controlling the Human Element of Security"
 book_author: "Mitnick, Kevin D."
 rating: ""

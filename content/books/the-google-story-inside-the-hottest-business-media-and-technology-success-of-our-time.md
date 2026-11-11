@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Google Story: Inside the Hottest Business, Media and Technology Success of Our Time"
 book_author: "Vise, David A."
 rating: ""

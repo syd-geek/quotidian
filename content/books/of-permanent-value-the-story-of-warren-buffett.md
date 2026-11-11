@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Of Permanent Value: The Story of Warren Buffett"
 book_author: ""
 rating: "★★★★★"

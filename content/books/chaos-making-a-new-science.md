@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Chaos: Making a New Science"
 book_author: "Gleick, James"
 rating: ""

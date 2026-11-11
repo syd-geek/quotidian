@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Tipping Point: How Little Things Can Make a Big Difference"
 book_author: "Gladwell, Malcolm"
 rating: ""

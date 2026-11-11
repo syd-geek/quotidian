@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Liar's Poker"
 book_author: "Lewis, Michael"
 rating: ""

@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Beyond The Last Blue Mountain: A Life Of J. R. D. Tata"
 book_author: "Lala, R.M."
 rating: ""

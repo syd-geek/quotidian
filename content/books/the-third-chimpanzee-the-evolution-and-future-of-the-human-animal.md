@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Third Chimpanzee: The Evolution and Future of the Human Animal"
 book_author: "Jared Diamond"
 rating: ""

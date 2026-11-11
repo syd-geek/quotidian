@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Boomerang: Travels in the New Third World"
 book_author: "Lewis, Michael"
 rating: ""

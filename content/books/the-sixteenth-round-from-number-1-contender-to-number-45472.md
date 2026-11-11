@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Sixteenth Round: From Number 1 Contender to Number 45472"
 book_author: "Rubin Carter"
 rating: ""

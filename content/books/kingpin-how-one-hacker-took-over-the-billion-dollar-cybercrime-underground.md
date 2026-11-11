@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Kingpin: How One Hacker Took Over the Billion-Dollar Cybercrime Underground"
 book_author: "Kevin Poulsen"
 rating: ""

@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Beyond the Giant Personal Insight into the life of JRD Tata"
 book_author: "D.R. Pendse"
 rating: ""

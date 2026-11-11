@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Just for Fun: The Story of an Accidental Revolutionary"
 book_author: "Linus Torvalds"
 rating: ""

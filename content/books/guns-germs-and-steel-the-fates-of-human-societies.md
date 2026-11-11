@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Guns, Germs, and Steel: The Fates of Human Societies"
 book_author: "Diamond, Jared"
 rating: ""

@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Bhagat Singh: Select Speeches and Writings"
 book_author: "Bhagat Singh"
 rating: ""

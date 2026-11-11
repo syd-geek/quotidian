@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Oath of the Vayuputras (Shiva Trilogy, #3)"
 book_author: "Tripathi, Amish"
 rating: ""

@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "iCon: Steve Jobs, the Greatest Second Act in the History of Business"
 book_author: "Young, Jeffrey S."
 rating: ""

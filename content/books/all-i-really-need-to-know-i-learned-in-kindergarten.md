@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "All I Really Need to Know I Learned in Kindergarten"
 book_author: "Fulghum, Robert"
 rating: ""

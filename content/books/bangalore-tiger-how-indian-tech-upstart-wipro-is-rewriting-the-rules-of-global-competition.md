@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Bangalore Tiger: How Indian Tech Upstart Wipro Is Rewriting the Rules of Global Competition"
 book_author: "Hamm, Steve"
 rating: ""

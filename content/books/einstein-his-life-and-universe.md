@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Einstein His Life and Universe"
 book_author: ""
 rating: "★★★★"

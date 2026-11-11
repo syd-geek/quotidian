@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Life Behind the Lobby: Indian American Motel Owners and the American Dream"
 book_author: "Dhingra, Pawan"
 rating: ""

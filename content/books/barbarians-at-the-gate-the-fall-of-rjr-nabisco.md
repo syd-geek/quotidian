@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Barbarians at the Gate: The Fall of RJR Nabisco"
 book_author: "Burrough, Bryan"
 rating: ""

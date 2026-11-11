@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "For the Term of His Natural Life"
 book_author: "Clarke, Marcus"
 rating: ""

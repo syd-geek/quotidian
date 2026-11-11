@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Sister of My Heart (Anju and Sudha #1)"
 book_author: "Divakaruni, Chitra Banerjee"
 rating: ""

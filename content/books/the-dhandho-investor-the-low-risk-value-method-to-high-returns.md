@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Dhandho Investor: The Low-Risk Value Method to High Returns"
 book_author: "Pabrai, Mohnish"
 rating: ""

@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Secret of the Nagas (The Shiva Trilogy, #2)"
 book_author: "Tripathi, Amish"
 rating: ""

@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Blink: The Power of Thinking Without Thinking"
 book_author: "Gladwell, Malcolm"
 rating: ""

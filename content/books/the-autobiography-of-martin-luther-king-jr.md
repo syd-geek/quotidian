@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Autobiography of Martin Luther King, Jr."
 book_author: "King Jr., Martin Luther"
 rating: ""

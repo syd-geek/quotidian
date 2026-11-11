@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "John Ilhan: A Crazy Life"
 book_author: "Dabkowski, Stephen"
 rating: ""

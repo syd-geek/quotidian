@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Polyester Prince: The Rise of Dhirubhai Ambani"
 book_author: "McDonald, Hamish"
 rating: ""

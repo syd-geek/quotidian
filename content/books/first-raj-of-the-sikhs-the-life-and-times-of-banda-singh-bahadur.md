@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "First Raj of the Sikhs: The Life and Times of Banda Singh Bahadur"
 book_author: "Dhillon, Harish"
 rating: ""

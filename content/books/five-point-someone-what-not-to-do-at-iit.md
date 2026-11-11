@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Five Point Someone: What Not to Do at IIT"
 book_author: "Bhagat, Chetan"
 rating: ""

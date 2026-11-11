@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Steve Jobs"
 book_author: "Isaacson, Walter"
 rating: ""

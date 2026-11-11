@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Field Notes on Democracy: Listening to Grasshoppers"
 book_author: "Roy, Arundhati"
 rating: ""

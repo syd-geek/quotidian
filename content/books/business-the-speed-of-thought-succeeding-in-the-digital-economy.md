@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Business @ the Speed of Thought: Succeeding in the Digital Economy"
 book_author: "Gates, Bill"
 rating: ""

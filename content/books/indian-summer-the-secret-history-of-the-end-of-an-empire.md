@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Indian Summer: The Secret History of the End of an Empire"
 book_author: "Tunzelmann, Alex von"
 rating: ""

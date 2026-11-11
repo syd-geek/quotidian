@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Simpsons and Their Mathematical Secrets"
 book_author: "Singh, Simon"
 rating: ""

@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Mythical Man-Month: Essays on Software Engineering"
 book_author: "Brooks Jr., Frederick P."
 rating: ""

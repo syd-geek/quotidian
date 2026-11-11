@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Guide"
 book_author: "R.K. Narayan"
 rating: ""

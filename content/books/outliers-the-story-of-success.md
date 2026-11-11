@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Outliers: The Story of Success"
 book_author: "Gladwell, Malcolm"
 rating: ""

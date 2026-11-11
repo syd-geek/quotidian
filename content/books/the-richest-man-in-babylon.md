@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Richest Man in Babylon"
 book_author: "Clason, George S."
 rating: ""

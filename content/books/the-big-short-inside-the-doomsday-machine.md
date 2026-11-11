@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "The Big Short: Inside the Doomsday Machine"
 book_author: "Lewis, Michael"
 rating: ""

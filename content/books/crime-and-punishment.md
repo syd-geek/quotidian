@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Crime and Punishment"
 book_author: "Dostoevsky, Fyodor"
 rating: ""

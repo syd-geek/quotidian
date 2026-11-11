@@ -1,6 +1,6 @@
 ---
 date: "1900-01-01"
-draft: false
+draft: true
 title: "Wolf of the Plains"
 book_author: "Conn Iggulden"
 rating: "★★★"
