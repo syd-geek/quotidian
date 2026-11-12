@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f02f4e1c9c98c994",
+        "id": "ff44885f53d3c40b",
         "type": "tabs",
         "children": [
           {
-            "id": "8c9416ba8d65350a",
+            "id": "c94f289d18660cab",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -181,6 +181,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "8c9416ba8d65350a",
-  "lastOpenFiles": []
+  "active": "c94f289d18660cab",
+  "lastOpenFiles": [
+    "bombay-duck.md"
+  ]
 }
