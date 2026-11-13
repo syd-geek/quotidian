@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+  <title id="title">Thinking face</title>
+  <desc id="description">A curious face looking upward with a hand resting on its chin.</desc>
+  <g fill="none" stroke="#68427d" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+    <path d="M167 35c10-15 29-19 42-9 12 9 13 27 3 38"/>
+    <path d="M186 70c7-8 17-11 26-7"/>
+  </g>
+  <circle cx="128" cy="133" r="82" fill="#ffd166" stroke="#342b20" stroke-width="8"/>
+  <path d="M80 119c8-8 18-11 29-8" fill="none" stroke="#342b20" stroke-linecap="round" stroke-width="7"/>
+  <ellipse cx="97" cy="137" rx="6" ry="9" fill="#342b20"/>
+  <ellipse cx="151" cy="134" rx="6" ry="9" fill="#342b20"/>
+  <path d="M115 168c11-8 23-8 33-1" fill="none" stroke="#342b20" stroke-linecap="round" stroke-width="7"/>
+  <path d="M146 201c-4-10-4-20 1-29 5-10 15-15 24-12 8 3 11 12 7 20l-8 15c-3 6-2 14 2 20l9 15h-67l-5-13c-5-13-17-21-31-22l-18-1c-10-1-17-9-16-18 1-8 8-14 16-14l26 1c15 1 28 8 37 19l10 12c5 6 14 10 23 10Z" fill="#c64b00" stroke="#342b20" stroke-linejoin="round" stroke-width="8"/>
+</svg>
